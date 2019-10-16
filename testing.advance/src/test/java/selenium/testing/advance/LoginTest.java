@@ -21,12 +21,11 @@ public class LoginTest {
 
 	@Test()
 	public void testLogin() {
-		driver = RunBrowser.runBrowser("chrome");
-		driver.get("http://10.232.237.143:443/TestMeApp/fetchcat.htm");
 		//Login l = new Login(driver);
 		LoginUsingPageFactory l=PageFactory.initElements(driver, LoginUsingPageFactory.class);
 		l.clickSignInlink();
 		l.login("lalitha", "Password123");
+		l.clickLogin();
 		Assert.assertEquals("Home", driver.getTitle());
 	}
 

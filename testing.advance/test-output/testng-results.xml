@@ -1,25 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32109" started-at="2019-10-15T14:07:23 IST" finished-at="2019-10-15T14:07:55 IST">
+  <suite name="Default suite" duration-ms="23184" started-at="2019-10-16T10:05:16 IST" finished-at="2019-10-16T10:05:39 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32109" started-at="2019-10-15T14:07:23 IST" finished-at="2019-10-15T14:07:55 IST">
-      <class name="selenium.testing.advance.LoginTest">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:selenium.testing.advance.LoginTest@1dfe2924]" name="initBrowser" is-config="true" duration-ms="11369" started-at="2019-10-15T14:07:23 IST" finished-at="2019-10-15T14:07:34 IST">
+    <test name="Default test" duration-ms="23184" started-at="2019-10-16T10:05:16 IST" finished-at="2019-10-16T10:05:39 IST">
+      <class name="selenium.testing.advance.TestExtentReports">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="beforeClass" is-config="true" duration-ms="20956" started-at="2019-10-16T10:05:16 IST" finished-at="2019-10-16T10:05:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:selenium.testing.advance.LoginTest@1dfe2924]" name="testLogin" duration-ms="19780" started-at="2019-10-15T14:07:34 IST" finished-at="2019-10-15T14:07:54 IST">
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="failTest()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="failTest" duration-ms="534" started-at="2019-10-16T10:05:37 IST" finished-at="2019-10-16T10:05:37 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#Pass"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CDC2-D-CM1WXJ2', ip: '10.236.114.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\A08019~1.02\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bf849ed416773fc1277a0e26d869b364
+*** Element info: {Using=id, value=Pass}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Pass"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CDC2-D-CM1WXJ2', ip: '10.236.114.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\A08019~1.02\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bf849ed416773fc1277a0e26d869b364
+*** Element info: {Using=id, value=Pass}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at selenium.testing.advance.TestExtentReports.failTest(TestExtentReports.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="close()[pri:0, instance:selenium.testing.advance.LoginTest@1dfe2924]" name="close" is-config="true" duration-ms="910" started-at="2019-10-15T14:07:54 IST" finished-at="2019-10-15T14:07:55 IST">
+        </test-method> <!-- failTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="afterMethod" is-config="true" duration-ms="413" started-at="2019-10-16T10:05:37 IST" finished-at="2019-10-16T10:05:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failTest status=FAILURE method=TestExtentReports.failTest()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- selenium.testing.advance.LoginTest -->
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="passTest()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="passTest" duration-ms="5" started-at="2019-10-16T10:05:38 IST" finished-at="2019-10-16T10:05:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="afterMethod" is-config="true" duration-ms="6" started-at="2019-10-16T10:05:38 IST" finished-at="2019-10-16T10:05:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=passTest status=SUCCESS method=TestExtentReports.passTest()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="skipTest()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="skipTest" duration-ms="2" started-at="2019-10-16T10:05:38 IST" finished-at="2019-10-16T10:05:38 IST">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[SKIP]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: SKIP
+at selenium.testing.advance.TestExtentReports.skipTest(TestExtentReports.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-10-16T10:05:38 IST" finished-at="2019-10-16T10:05:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=skipTest status=SKIP method=TestExtentReports.skipTest()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:selenium.testing.advance.TestExtentReports@30b8a058]" name="afterClass" is-config="true" duration-ms="1209" started-at="2019-10-16T10:05:38 IST" finished-at="2019-10-16T10:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- selenium.testing.advance.TestExtentReports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

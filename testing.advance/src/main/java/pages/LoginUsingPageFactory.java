@@ -31,6 +31,9 @@ public class LoginUsingPageFactory {
 	public void login(String un, String paswd) {
 		username.sendKeys(un);
 		password.sendKeys(paswd);
+		
+	}
+	public void clickLogin() {
 		login.click();
 	}
 }
